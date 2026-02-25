@@ -1,13 +1,14 @@
 # 🩺 Med Buddy – Production-Ready ML Healthcare Prediction System
 
 Med Buddy is an end-to-end Machine Learning application that predicts the probability of a medical outcome using validated ML techniques and industry-standard engineering practices.  
-The project demonstrates the complete ML lifecycle — from experimentation and model selection to production deployment on AWS.
+The project demonstrates the complete ML lifecycle — from exploratory data analysis and model benchmarking to production deployment on AWS.
 
 ---
 
 ## 🚀 Key Features
 
 - End-to-end ML pipeline: **EDA → Modeling → Validation → Deployment**
+- Exploratory Data Analysis with outlier detection
 - Robust cross-validation to prevent data leakage
 - Baseline and advanced model benchmarking
 - Medical domain–aware evaluation metrics
@@ -20,6 +21,15 @@ The project demonstrates the complete ML lifecycle — from experimentation and 
 
 In healthcare prediction systems, minimizing **false negatives** is critical.  
 Therefore, this project prioritizes **Recall** and **F1-score** over accuracy to ensure reliable and safer predictions, especially in the presence of class imbalance.
+
+---
+
+## 📊 Exploratory Data Analysis (EDA)
+
+- Performed data visualization using **Matplotlib** and **Seaborn**
+- Analyzed feature distributions and relationships
+- Identified and examined **outliers** using boxplots and distribution plots
+- Insights from EDA guided feature selection and model choice
 
 ---
 
@@ -65,6 +75,7 @@ Accuracy was intentionally avoided due to class imbalance and medical risk sensi
 ---
 
 ## ⚙️ Productionization
+
 - Experimental Jupyter notebooks converted into **modular Python scripts**
 - Clear separation of:
   - Training pipeline
@@ -81,12 +92,22 @@ Accuracy was intentionally avoided due to class imbalance and medical risk sensi
 ---
 
 ## 🛠️ Tech Stack
-**Machine Learning:** Python, Scikit-learn, XGBoost, Pandas, NumPy 
+
+**Machine Learning & EDA:**  
+- Python  
+- Scikit-learn  
+- XGBoost  
+- Pandas, NumPy  
+- Matplotlib, Seaborn  
+
 **Backend:** FastAPI, Uvicorn  
 **Frontend:** Streamlit  
 **Deployment:** AWS EC2 (Ubuntu), Git, GitHub  
 
+---
+
 ## 📂 Project Structure
+
 ```bash
 .
 ├── backend/              # FastAPI backend
