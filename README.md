@@ -87,6 +87,7 @@ Accuracy was intentionally avoided due to class imbalance and medical risk sensi
 **Deployment:** AWS EC2 (Ubuntu), Git, GitHub  
 
 ## 📂 Project Structure
+```bash
 .
 ├── backend/              # FastAPI backend
 ├── frontend/             # Streamlit frontend
