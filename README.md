@@ -98,6 +98,7 @@ Accuracy was intentionally avoided due to class imbalance and medical risk sensi
 ├── env_template.txt
 ├── README.md
 └── .gitignore
+```
 
 ▶️ Running the Application Locally
 Backend
