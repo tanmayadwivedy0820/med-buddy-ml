@@ -133,11 +133,18 @@ streamlit run frontend/app.py
 
 ## ☁️ Deployment
 
-- Deployed on AWS EC2 (Ubuntu)
-- FastAPI served using Uvicorn
-- Streamlit frontend exposed via public EC2 IP
-- Security groups configured for required ports
+The application was deployed and validated on **AWS EC2 (Ubuntu)** to confirm the
+full stack runs correctly on public infrastructure. The instance has since been
+stopped to avoid idle hosting costs — it can be redeployed in minutes.
+
+Deployment setup:
+- FastAPI backend served via Uvicorn
+- Streamlit frontend exposed over the instance's public IP
+- Security groups configured to allow the required ports
 - Environment-based configuration for production readiness
+
+> The instance is not kept running continuously, as a portfolio demo does not
+> justify an always-on paid server. This is a deliberate cost decision, not a deployment gap.
 
 ---
 
